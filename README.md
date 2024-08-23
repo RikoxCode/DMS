@@ -30,8 +30,8 @@ To run DMS locally, you will need:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/dms.git
-   cd dms
+   git clone https://github.com/RikoxCode/DMS.git
+   cd DMS
    ```
    
 2. **Install backend dependencies:**
