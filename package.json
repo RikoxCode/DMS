@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start:backend": "cd apps && cd backend && npm start",
+    "start:frontend": "cd apps && cd frontend && npm start",
+    "start": "npm run start:backend && npm run start:frontend",
+    "build:backend": "cd apps && cd backend && npm run build",
+    "build:frontend": "cd apps && cd frontend && npm run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "test:backend": "cd apps && cd backend && npm test",
+    "test:frontend": "cd apps && cd frontend && npm test",
+    "test": "npm run test:backend && npm run test:frontend"
+  }
+}

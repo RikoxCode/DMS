@@ -1,0 +1,75 @@
+{
+  "archiveItemExample": {
+    "title": "string",
+    "description": "string",
+    "date": "string",
+    "tags": ["string"],
+    "url": "string",
+    "imageConfig": {
+      "image": "string",
+      "imageAlt": "string",
+      "imageAttributes": {
+        "data-src": "string",
+        "data-srcset": "string"
+      },
+      "imageCaption": "string"
+    },
+    "content": "string",
+    "videoConfig": {
+      "video": "string",
+      "videoAlt": "string",
+      "videoAttributes": {
+        "width": "string",
+        "height": "string",
+        "frameborder": "string",
+        "allow": "string",
+        "allowfullscreen": "string"
+      },
+      "videoCaption": "string"
+    },
+    "audioConfig": {
+      "audio": "string",
+      "audioAlt": "string",
+      "audioAttributes": {
+        "controls": "string"
+      },
+      "audioCaption": "string"
+    },
+    "quoteConfig": {
+      "quote": "string",
+      "quoteAuthor": "string",
+      "quoteSource": "string"
+    },
+    "linkConfig": {
+      "link": "string",
+      "linkText": "string"
+    }
+  },
+  "frontendConfig": {
+    "port": 3000,
+    "backendUrl": "http://localhost:3001",
+    "siteConfig": {
+      "siteName": "My Site",
+      "siteDescription": "This is my site",
+      "siteAuthor": "John Doe",
+      "siteUrl": "http://localhost:3000",
+      "siteImage": "http://localhost:3000/images/logo.png",
+      "siteFavicon": "http://localhost:3000/images/favicon.ico"
+    }
+  },
+  "backendConfig": {
+    "enviroment": "dev",
+    "port": 3001,
+    "urlPrefix": "/api",
+    "version": "v1",
+    "authConfig": {
+      "hashSalt": "mySalt",
+      "expiresIn": "1d"
+    },
+    "dbConfig": {
+      "connectionString": "mongodb://localhost:27017",
+      "databaseName": "dms_archive_db",
+      "collectionName": "archive"
+    }
+  }
+}
