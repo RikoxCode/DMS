@@ -15,10 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 // Use the routes
 const prefix: string = config.backendConfig.urlPrefix + '/' + config.backendConfig.version;
 app.use(prefix + '/auth', authRoute);
-app.get(prefix + '/', (req: any, res: any) => {
-    console.log(req.body);
-    res.send('Hello World!')
-});
 
 // List all routes
 app._router.stack.forEach(function(r: any) {
