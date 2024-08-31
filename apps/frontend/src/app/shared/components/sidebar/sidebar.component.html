@@ -1,0 +1,62 @@
+<aside class="bg-zinc-950 text-white w-64 min-h-screen p-4">
+  <nav>
+    <div class="mb-8">
+      <a class="cursor-pointer" (click)="reloadHeader('/home')">
+        <img class="h-12 hover:bg-zinc-900 rounded" src="assets/logo.png">
+      </a>
+    </div>
+    <div class="space-y-[33rem] h-screen overflow-hidden">
+      <div class="space-y-2">
+        <li class="opcion-con-desplegable">
+          <div (click)="reloadHeader('/home')" class="flex items-center justify-between p-2 hover:bg-gray-800 cursor-pointer">
+            <div class="flex items-center">
+              <i class="fas fa-calendar-alt mr-2"></i>
+              <div class="mr-2"><mat-icon>home</mat-icon></div>
+              <span>Home</span>
+            </div>
+          </div>
+        </li>
+        <li class="opcion-con-desplegable">
+          <div (click)="reloadHeader('/archives')" class="flex items-center justify-between p-2 hover:bg-gray-800 cursor-pointer">
+            <div class="flex items-center">
+              <i class="fas fa-money-bill-wave mr-2"></i>
+              <div class="mr-2"><mat-icon>list_alt</mat-icon></div>
+              <span>Archives</span>
+            </div>
+          </div>
+        </li>
+      </div>
+      <!--Bottom fixed-->
+      <div class="w-56 space-y-2">
+        <li class="opcion-con-desplegable">
+          <div (click)="reloadHeader('/auth/logout')" class="flex items-center justify-between p-2 hover:bg-gray-800 cursor-pointer">
+            <div class="flex items-center">
+              <i class="fas fa-sign-out-alt mr-2"></i>
+              <div class="mr-2"><mat-icon>logout</mat-icon></div>
+              <span>Logout</span>
+            </div>
+          </div>
+        </li>
+        <li class="opcion-con-desplegable">
+          <div (click)="reloadHeader('/auth/login')" class="flex items-center justify-between p-2 hover:bg-gray-800 cursor-pointer">
+            <div class="flex items-center">
+              <i class="fas fa-sign-in-alt mr-2"></i>
+              <div class="mr-2"><mat-icon>login</mat-icon></div>
+              <span>Login</span>
+            </div>
+          </div>
+        </li>
+        <!--settings-->
+        <li class="opcion-con-desplegable">
+          <div (click)="reloadHeader('/settings')" class="flex items-center justify-between p-2 hover:bg-gray-800 cursor-pointer">
+            <div class="flex items-center">
+              <i class="fas fa-cog mr-2"></i>
+              <div class="mr-2"><mat-icon>settings</mat-icon></div>
+              <span>Settings</span>
+            </div>
+          </div>
+        </li>
+      </div>
+    </div>
+  </nav>
+</aside>
