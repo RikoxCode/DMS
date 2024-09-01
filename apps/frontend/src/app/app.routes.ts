@@ -20,13 +20,17 @@ export const routes: Routes = [
   },
   {
     path: 'archives',
-    component: ArchivesComponent,
-    title: routeTitlePrefix + 'Archives',
-    data: { title: 'Archives' },
     children: [
+      {
+        path: '',
+        component: ArchivesComponent,
+        title: routeTitlePrefix + 'Archives',
+        data: { title: 'Archives' },
+      },
       {
         path: ':slug',
         component: ArchiveListViewComponent,
+        pathMatch: 'full'
       }
     ]
   },
